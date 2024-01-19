@@ -1,0 +1,19 @@
+Applicazione distribuita con architettura publish subscriber (modello di comunicazione uno a molti).
+
+Elemento disaccoppiante: topic gestito da event service (Artemis).
+
+Sottoscrizione durevole: consente al sottoscrittore di ricevere il messaggio anche se al momento della 
+sottoscrizione non era attivo.
+
+In questo caso si realizza il disaccoppiamento temporale grazie alla sottoscrizione durevole. Senza
+sottoscrizione durevole non si ha il disaccoppiamento spaziale perché bisogna invocare prima il sottoscrittore
+e mantenerlo in attesa per poter ricevere i messaggi che sono pubblicati.
+
+AGGIUNTE:
+- Assegno ID al client;
+- Assegno nome al sottoscrittore, che viene creato usando un metodo diverso (createDurableSubscriber).
+
+FUNZIONAMENTO:
+- Avvio il subscriber e lo termino (digito carattere);
+- Avvio il publisher;
+- Avvio il subscriber e riceve il messaggio.
