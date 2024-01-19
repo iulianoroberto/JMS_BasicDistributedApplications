@@ -1,0 +1,8 @@
+A differenza dell'esercizio 6.1.1 in questo caso non si usa l'operazione di ricezione bloccante. Cambia il ricevente.
+
+Si definisce una callback che viene iniettata nel ricevente perché questo possa ricevere messaggi in modo asincrono, il metodo di call back è 
+onMessage, che è messo a disposizione dall'interfaccia MessageListener (si implementa la classe definendo il metodo onMessage).
+
+L'istanza della classe anonima MessageListener viene passata al ricevente tramite il metodo setMessageListener.
+
+Il listener, ogni qual volta vi è un messaggio consegnabile al consumatore viene invocato il metodo onMessage.
