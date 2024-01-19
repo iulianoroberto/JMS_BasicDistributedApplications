@@ -1,0 +1,8 @@
+Applicazione con architettura publisher subscriber (modello di comunicazione uno a molti).
+
+L'elemento disaccoppiante è il topic.
+
+In questo modello la consegna è gestita dalla sottoscrizione: se esiste la sottoscrizione il messaggio viene
+consegnato a chi si è sottoscritto. Se non esiste alcuna sottoscrizione il messaggio viene cancellato (perso).
+
+Quindi, bisogna eseguire prima il subscriber e poi il publisher.
