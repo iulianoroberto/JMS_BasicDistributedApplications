@@ -1,0 +1,14 @@
+**************************
+* PASSI PER L'ESECUZIONE *
+**************************
+
+1 - Avviare il broker (sarebbe event service)
+
+    Avviare artemis da console. Quindi, aprire la console e posizionarsi nella radice, dalla directory  C:\apache-artemis-2.21.0\abroker\bin lanciare
+    il comando: artemis run
+
+    ATTENZIONE: potrebbe succedere che artemis non parte perché la memoria del PC è troppo piena o che la porta 1883 è già impegnata (netstat -ano).
+
+2 - Avviare Sender e Reciver (è indifferente quale viene avviato prima perché sono entrambi client).
+
+    IPOTETICA DOMANDA ZIMEO: chi devo avviare prima sender o receiver? E' indifferenre perché sono entrambi client.

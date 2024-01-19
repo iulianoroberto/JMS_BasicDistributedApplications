@@ -1,0 +1,4 @@
+L'ordine di avvio del sender e del receiver non è importante. Possiamo aviare prima il sender e poi il receiver e
+viceversa. Se avviamo prima il ricevente avendo usata un'operazione di ricezione bloccante il ricevente si sopsende,
+se invece avviamo prima il mittente il messaggio che viene inviato sarà memorizzato fino a ricezione dal JMS
+provider (gestore di code in questo caso).

@@ -1,0 +1,4 @@
+Questo esercizio usa le code, quindi architettura produttore/consumatore e modello di comunicazione punto punto.
+
+Il prim problema da affrontare è quello relativo alla creazione di una connessione tra il client (sender o receiver) e il provider,
+ossia il gestore di code. A tal fine viene sfruttata una factory specifica di ActiveMQ.
