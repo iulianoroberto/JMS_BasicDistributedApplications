@@ -1,0 +1,5 @@
+Applicazione con architettura publisher subscriber (modello di comunicazione uno a molti).
+
+Elemento disaccoppiante: topic gestito dall'event service (Artemis).
+
+Ricezione asincrona (il subscriber non si blocca).
